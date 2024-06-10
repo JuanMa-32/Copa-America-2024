@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class NoticiaTest {
 
     @Test
-    void testCrearNoticia() {
+    void testInstanciarNoticia() {
         //given
         Noticia noticia = new Noticia();
 

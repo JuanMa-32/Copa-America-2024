@@ -3,6 +3,7 @@ package com.juanag32.copaamerica.models;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -15,8 +16,12 @@ public class Grupo {
     private Long id;
 
     private String nombre;
-    @OneToMany
+    @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "grupo_id")
-    List<Seleccion> selecciones;
+    List<Seleccion> selecciones= new ArrayList<>();
+
+    public void addSeleccion(Seleccion seleccion){
+        this.selecciones.add(seleccion);
+    }
 
 }

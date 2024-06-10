@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class SeleccionTest {
 
     @Test
-    void testCrearSeleccion() {
+    void testInstanciarSeleccion() {
 
         //given
         Seleccion seleccion = new Seleccion();

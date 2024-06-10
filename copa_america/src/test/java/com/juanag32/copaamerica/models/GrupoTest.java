@@ -9,7 +9,7 @@ import java.util.List;
 public class GrupoTest {
 
     @Test
-    void testCrearGrupo() {
+    void testInstanciarGrupo() {
         //given
         Seleccion arg = new Seleccion(1L,"argentina","albiceleste","1966",50,18,null);
         Seleccion can = new Seleccion(2L,"canada","aaaa","1955",55,0,null);
@@ -27,5 +27,26 @@ public class GrupoTest {
         assertTrue(grupo.getSelecciones().size()>3);
         assertEquals("A",grupo.getNombre());
 
+    }
+
+    @Test
+    void testAddSeleccionAGrupo() {
+        //given
+        Seleccion arg = new Seleccion(1L,"argentina","albiceleste","1966",50,18,null);
+        Grupo grupo = new Grupo();
+
+        //when
+        grupo.addSeleccion(arg);
+
+        //then
+        assertFalse(grupo.getSelecciones().isEmpty());
+        assertEquals("argentina",grupo.getSelecciones().get(0).getNombre());
+    }
+
+    @Test
+    void testGrupoVacio() {
+        Grupo grupo = new Grupo();
+
+        assertTrue(grupo.getSelecciones().isEmpty());
     }
 }

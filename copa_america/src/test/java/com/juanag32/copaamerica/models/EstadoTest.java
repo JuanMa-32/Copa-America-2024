@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class EstadoTest {
 
     @Test
-    void testCrearEstado() {
+    void testInstanciarEstado() {
         //given
         Estado estado = new Estado();
 

@@ -11,7 +11,7 @@ import java.util.Date;
 public class PartidoTest {
 
     @Test
-    void testCrearPartido() {
+    void testInstanciarPartido() {
         //given
         Partido partido = new Partido();
         Seleccion local =new Seleccion();

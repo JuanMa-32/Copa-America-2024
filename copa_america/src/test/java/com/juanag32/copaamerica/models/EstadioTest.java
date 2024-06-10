@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class EstadioTest {
 
     @Test
-    void testCrearEstadio() {
+    void testInstanciarEstadio() {
         //given
         Estadio estadio = new Estadio();
 

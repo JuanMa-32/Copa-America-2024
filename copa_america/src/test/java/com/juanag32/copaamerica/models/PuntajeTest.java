@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class PuntajeTest {
 
     @Test
-    void testCrearPuntaje() {
+    void testInstanciarPuntaje() {
         //given
         Puntaje puntaje= new Puntaje();
 

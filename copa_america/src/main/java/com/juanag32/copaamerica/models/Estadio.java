@@ -12,8 +12,9 @@ public class Estadio {
     private Long id;
 
     private String nombre;
-    //ManyToOne
-    //private Localidad localidad;
+    @ManyToOne
+    @JoinColumn(name = "localidad_id")
+    private Localidad localidad;
     private Integer capacidad;
     private String descripcion;
 

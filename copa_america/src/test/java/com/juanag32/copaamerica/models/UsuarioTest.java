@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class UsuarioTest {
     @Test
-    void testCrearUsuario() {
+    void testInstanciarUsuario() {
         //given
         Usuario usuario = new Usuario();
 

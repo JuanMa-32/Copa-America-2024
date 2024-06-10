@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class LocalidadTest {
 
     @Test
-    void testCrearLocalidad() {
+    void testInstanciarLocalidad() {
         //given
         Localidad localidad = new Localidad();
 
